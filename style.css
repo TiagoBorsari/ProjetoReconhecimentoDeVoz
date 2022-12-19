@@ -2,7 +2,7 @@
 
 :root{
     --font-family: 'Oswald', sans-serif;
-    --bg-color: #222831;
+    --bg-color: #182747;
     --primary-color: #FF165D;
 }
 
@@ -34,9 +34,44 @@ h3{
 }
 
 .box {
-    border:2px solid var(--primary-color);
+    border:3px solid var(--primary-color);
+    border-radius: 4px;
     display: inline-block;
     font-size: 5em;
     padding: 10px;
     margin: 20px;
 }
+
+.btn-jogar{
+    font-family: var(--font-family);
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 20px;
+    border:solid 2px var(--primary-color);
+    margin-top: 50px;
+    font-size: 1.5em;
+    border-radius: 50px;
+}
+
+
+.btn-jogar{
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.btn-jogar:hover{
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(5px 5px 5px rgba(0,0,0,.5));
+    color: var(--bg-color);
+    background-color: var(--primary-color);
+}
+
+.btn-jogar:active{
+    transition: all 0s;
+    color: var(--primary-color);
+    background-color: var(--bg-color);
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+    }  
